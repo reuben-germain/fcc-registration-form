@@ -12,21 +12,21 @@
     </p>
     <form action="https://register-demo.freecodecamp.org" method="post">
         <fieldset>
-            <label for="first-name">Enter Your First Name: <input id="first-name" type="text" required></label>
-            <label for="last-name">Enter Your Last Name: <input id="last-name" type="text" required></label>
-            <label for="email">Enter Your Email: <input id="email" type="email" required></label>
-            <label for="new-password">Create a New Password: <input id="new-password" type="password" required pattern="[a-z0-5]{8,}"></label>
+            <label for="first-name">Enter Your First Name: <input name="first-name" id="first-name" type="text" required></label>
+            <label for="last-name">Enter Your Last Name: <input name="last-name" id="last-name" type="text" required></label>
+            <label for="email">Enter Your Email: <input name="email" id="email" type="email" required></label>
+            <label for="new-password">Create a New Password: <input name="password" id="new-password" type="password" required pattern="[a-z0-5]{8,}"></label>
         </fieldset>
         <fieldset>
             <label for="personal-account"><input id="personal-account" type="radio" name="account-type"> Personal Account</label>
             <label for="business-account"><input id="business-account" type="radio" name="account-type"> Business Account</label>
-            <label for="terms-and-conditions"><input id="terms-and-conditions" type="checkbox" required> I accept the <a href="">terms and conditions</a></label>
+            <label for="terms-and-conditions"><input name="terms" id="terms-and-conditions" type="checkbox" required> I accept the <a href="">terms and conditions</a></label>
         </fieldset>
         <fieldset>
-            <label for="profile-picture">Upload a profile picture: <input id="profile-picture" for="profile-picture" type="file"></label>
-            <label for="age">Input your age (years): <input id="age" type="number" min="13" max="120"></input></label>
+            <label for="profile-picture">Upload a profile picture: <input name="file" id="profile-picture" for="profile-picture" type="file"></label>
+            <label for="age">Input your age (years): <input name="age" id="age" type="number" min="13" max="120"></input></label>
             <label for="referrer">How did you hear about us?
-            <select id="referrer">
+            <select name="referrer" id="referrer">
                 <option value="">(select one)</option>
                 <option value="1">News</option>
                 <option value="2">YouTube Channel</option>
@@ -34,7 +34,7 @@
                 <option value="4">Other</option>
               </select>
             </label>
-            <label for="bio">Provide a bio:<textarea id="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea></label>
+            <label for="bio">Provide a bio:<textarea name="bio" id="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea></label>
         </fieldset>
         <input type="submit" value="Submit" name="" id="">
     </form>
