@@ -59,4 +59,6 @@ input, textarea, select{
   input[type="submit"]{
     display: block;
     width: 60%;
+    margin: 0 auto;
+    width: 60vw;
   }
