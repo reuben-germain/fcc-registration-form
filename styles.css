@@ -55,3 +55,8 @@ input, textarea, select{
   margin-left: 0;
   vertical-align: middle;
   }
+
+  input[type="submit"]{
+    display: block;
+    width: 60%;
+  }
