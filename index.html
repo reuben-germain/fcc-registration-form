@@ -23,10 +23,10 @@
             <label for="terms-and-conditions"><input id="terms-and-conditions" type="checkbox" required> I accept the <a href="">terms and conditions</a></label>
         </fieldset>
         <fieldset>
-            <label>Upload a profile picture: <input type="file"></label>
-            <label>Input your age (years): <input type="number" min="13" max="120"></input></label>
-            <label>How did you hear about us?
-            <select>
+            <label for="profile-picture">Upload a profile picture: <input id="profile-picture" for="profile-picture" type="file"></label>
+            <label for="age">Input your age (years): <input id="age" type="number" min="13" max="120"></input></label>
+            <label for="referrer">How did you hear about us?
+            <select id="referrer">
                 <option value="">(select one)</option>
                 <option value="1">News</option>
                 <option value="2">YouTube Channel</option>
@@ -34,7 +34,7 @@
                 <option value="4">Other</option>
               </select>
             </label>
-            <label for="">Provide a bio:<textarea></textarea></label>
+            <label for="bio">Provide a bio:<textarea id="bio"></textarea></label>
         </fieldset>
         <input type="submit" value="Submit" name="" id="">
     </form>
